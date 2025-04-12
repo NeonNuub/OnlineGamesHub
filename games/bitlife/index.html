@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitLife - Online Games Hub</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <a href="../../index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Games</span>
+            </a>
+            <h2>BitLife</h2>
+            <div style="width: 100px;"></div>
+        </div>
+        
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner"></div>
+        </div>
+        
+        <iframe 
+            src="https://nb-ga.github.io/games-site/projects/bitlife/index.html"
+            class="game-frame" 
+            id="gameFrame"
+            allow="fullscreen"
+            onload="document.getElementById('loadingOverlay').style.display='none';"
+        ></iframe>
+    </div>
+    
+    <script>
+        setTimeout(() => {
+            document.getElementById('loadingOverlay').style.display = 'none';
+        }, 5000);
+    </script>
+</body>
+</html> 
